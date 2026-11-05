@@ -2,4 +2,4 @@ extends Node2D
 
 
 func _ready() -> void:
-	pass
+	SceneManager.call_deferred("goto_main_screen")

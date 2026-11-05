@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bdugvu0e22kww"]
+
+[ext_resource type="Script" uid="uid://dvgqaxbjsyys1" path="res://scripts/autoload/scene_manager.gd" id="1_njh4h"]
+[ext_resource type="PackedScene" uid="uid://3g2rbqteftji" path="res://scenes/ui/screens/main/main_screen.tscn" id="2_r85bv"]
+
+[node name="SceneManager" type="Node2D" unique_id=291332547]
+script = ExtResource("1_njh4h")
+MAIN_SCREEN = ExtResource("2_r85bv")
