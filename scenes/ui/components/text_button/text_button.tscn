@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bugk8g4bctjxe"]
+
+[ext_resource type="Texture2D" uid="uid://ciimpani7roc3" path="res://assets/buttons.png" id="1_5buux"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5buux"]
+texture = ExtResource("1_5buux")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+region_rect = Rect2(0, 0, 16, 16)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_76yl1"]
+texture = ExtResource("1_5buux")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+region_rect = Rect2(16, 0, 16, 16)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bw0iy"]
+texture = ExtResource("1_5buux")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+region_rect = Rect2(32, 0, 16, 16)
+
+[node name="TextButton" type="Button" unique_id=548740476]
+offset_right = 160.0
+offset_bottom = 43.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_5buux")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_76yl1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_bw0iy")

@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://3g2rbqteftji"]
 
 [ext_resource type="Script" uid="uid://cdsd8iwcyv5j5" path="res://scenes/ui/screens/main/main_screen.gd" id="1_hiulm"]
+[ext_resource type="Texture2D" uid="uid://dqswtbdat7fdq" path="res://assets/background.png" id="2_cpdxx"]
+[ext_resource type="PackedScene" uid="uid://bugk8g4bctjxe" path="res://scenes/ui/components/text_button/text_button.tscn" id="3_aokt1"]
 
 [node name="MainScreen" type="Control" unique_id=59956919]
 layout_mode = 3
@@ -11,19 +13,29 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_hiulm")
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2048956319]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_cpdxx")
+
 [node name="Label" type="Label" parent="." unique_id=899768565]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = 8
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
+anchor_bottom = 0.5
 offset_left = -55.0
-offset_top = 300.0
+offset_top = -164.0
 offset_right = 55.0
-offset_bottom = 323.0
+offset_bottom = -141.0
 grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 8
 text = "PLAYGROUND"
 
-[node name="StartButton" type="Button" parent="." unique_id=1686986614]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1556973782]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -36,6 +48,9 @@ offset_right = 23.0
 offset_bottom = 15.5
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="StartButton" parent="VBoxContainer" unique_id=548740476 instance=ExtResource("3_aokt1")]
+layout_mode = 2
 text = "Start"
 
-[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
