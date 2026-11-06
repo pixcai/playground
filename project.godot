@@ -22,9 +22,12 @@ SceneManager="*uid://bdugvu0e22kww"
 
 [display]
 
-window/stretch/mode="viewport"
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
-window/stretch/scale_mode="integer"
+window/size/window_width_override.macos=2560
+window/size/window_height_override.macos=1440
 
 [editor_plugins]
 
@@ -44,6 +47,5 @@ joypads/ignore_joypad_on_unfocused_application=true
 
 [rendering]
 
-textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 lights_and_shadows/multi_bounce_occlusion/enabled=true

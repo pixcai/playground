@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d2qohfll4tmly"]
 
 [ext_resource type="Script" uid="uid://c4o8csnhxk1ra" path="res://scenes/ui/screens/sample_select/sample_select_screen.gd" id="1_vhrxj"]
+[ext_resource type="Texture2D" uid="uid://dmpvukoirx5t2" path="res://assets/sample_select_background.png" id="2_ynh2y"]
 
 [node name="SampleSelectScreen" type="Control" unique_id=2133640568]
 layout_mode = 3
@@ -10,6 +11,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_vhrxj")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=930917084]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_ynh2y")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=242642755]
 layout_mode = 1
