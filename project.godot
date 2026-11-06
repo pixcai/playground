@@ -36,6 +36,7 @@ enabled=PackedStringArray("res://addons/GDQuest_GDScript_formatter/plugin.cfg", 
 [gui]
 
 common/auto_focus_strategy=1
+theme/custom="uid://by7caae8y3ba"
 
 [input_devices]
 
